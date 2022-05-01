@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Desafio1</string>
+    <string name="btEu">BOTÃO 1</string>
+    <string name="btVou">BOTÃO 2</string>
+    <string name="btVirar">BOTÃO 3</string>
+    <string name="btDev">BOTÃO 4</string>
+    <string name="AnderLine">----</string>
+</resources>

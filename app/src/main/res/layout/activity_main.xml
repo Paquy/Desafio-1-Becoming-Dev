@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--TextView Title-->
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desafio 1"
+        android:textSize="40dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/><!--TextView Title "Desafio 1"-->
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descobrindo a Palavra!!"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1"/><!--TextView Title "Descobrindo a Palavra!!"-->
+
+    <!--TextView Results in the buttons-->
+    <TextView
+        android:id="@+id/txtEu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="__"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="-20dp"
+        app:layout_constraintStart_toStartOf="@+id/text2"
+        app:layout_constraintTop_toBottomOf="@+id/text2"/><!--TextView "EU"-->
+    <TextView
+        android:id="@+id/txtVou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="___"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/txtEu"
+        app:layout_constraintTop_toBottomOf="@+id/text2"/><!--TextView "VOU"-->
+    <TextView
+        android:id="@+id/txtVirar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AnderLine"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/text2"
+        app:layout_constraintStart_toEndOf="@id/txtVou"/><!--TextView "VIRAR"-->
+    <TextView
+        android:id="@+id/txtDev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="___"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/txtVirar"
+        app:layout_constraintTop_toBottomOf="@+id/text2"/><!--TextView "DEV"-->
+
+    <!--Commands Buttons-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btTexto1"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:text="@string/btEu"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/ic_baseline_crop_16_9_24"
+        android:layout_marginStart="-200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text2"/><!--Button 1 "EU"-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btTexto2"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:text="@string/btVou"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/ic_baseline_crop_16_9_24"
+        android:layout_marginStart="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text2"/><!--Button 2 "VOU"-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btTexto3"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:text="@string/btVirar"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/ic_baseline_crop_16_9_24"
+        android:layout_marginStart="-200dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btTexto1"/><!--Button 3 "VIRAR"-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btTexto4"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:text="@string/btDev"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/ic_baseline_crop_16_9_24"
+        android:layout_marginStart="200dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btTexto2"/><!--Button 4 "DEV"-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
